@@ -1,0 +1,21 @@
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.social__link {
+	background-color: #393E46;
+	flex: 0 0 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s ease 0s;
+}
+
+.social__link:hover {
+	background-color: #454b54;
+}

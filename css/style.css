@@ -1,7 +1,11 @@
 /* reset style */
 @import url("reset.css");
+/* common style */
+@import url("common.css");
 /* header style */
 @import url("header.css");
+/* footer style */
+@import url("footer.css");
 
 /* ---------- */
 
@@ -27,6 +31,13 @@ body {
 
 .page {
 	flex: 1 1 auto;
+	padding-top: 85px;
+}
+
+@media (max-width: 500px) {
+	.page {
+		padding-top: 73px;
+	}
 }
 
 /* ---------- */
