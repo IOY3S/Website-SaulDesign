@@ -1,3 +1,29 @@
+.button {
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.5;
+	padding: 10px 32px;
+	color: #EEEEEE;
+	background-color: #00ADB5;
+	border-radius: 24px;
+	transition: background-color 0.3s ease 0s;
+}
+
+.button:hover {
+	background: rgba(57, 62, 70, 0.75);
+}
+
+.button--dark {
+	background: rgba(57, 62, 70, 0.75);
+}
+
+.button--dark:hover {
+	background-color: #00ADB5;
+}
+
+/* ---------- */
+
 .social {
 	display: flex;
 	justify-content: center;
