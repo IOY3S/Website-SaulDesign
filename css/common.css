@@ -1,3 +1,28 @@
+.title {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 1.2;
+	color: #EEEEEE;
+}
+
+.title span {
+	color: #00ADB5;
+}
+
+@media (max-width: 991.98px) {
+	.title {
+		font-size: 52px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.title {
+		font-size: 45px;
+	}
+}
+
+/* ---------- */
+
 .button {
 	text-align: center;
 	font-weight: 700;

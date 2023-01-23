@@ -36,6 +36,8 @@ body {
 
 /* .page__main {} */
 
+/* .page__about {} */
+
 @media (max-width: 500px) {
 	.page {
 		padding-top: 73px;
@@ -163,6 +165,71 @@ body {
 		gap: 10px;
 		flex-direction: column;
 		align-items: stretch;
+	}
+}
+
+/* ----- section-two (about) ----- */
+
+.about {
+	padding-top: 116px;
+	padding-bottom: 116px;
+}
+
+.about__container {
+	display: flex;
+}
+
+.about__content {
+	flex: 1 1 auto;
+	padding-right: 20px;
+}
+
+/* .about__title {} */
+
+.about__title:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.about__text {
+	max-width: 390px;
+	line-height: 1.5;
+}
+
+.about__image {
+	text-align: center;
+	flex: 0 0 53.2%;
+	/* 665px/1250px*100%=53.2% */
+}
+
+.about__image img {
+	max-width: 100%;
+}
+
+@media (max-width: 1280px) {
+	.about {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.about {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	.about__container {
+		flex-direction: column;
+	}
+
+	.about__content {
+		text-align: center;
+		padding-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.about__text {
+		max-width: none;
 	}
 }
 
