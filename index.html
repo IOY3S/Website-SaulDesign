@@ -23,13 +23,13 @@
 				<nav class="header__menu menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="#" class="menu__link">Home</a>
+							<a data-goto=".main" href="#" class="menu__link">Home</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">About Me</a>
+							<a data-goto=".about" href="#" class="menu__link">About Me</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Contact</a>
+							<a data-goto=".contacts" href="#" class="menu__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -78,23 +78,23 @@
 					<h2 class="works__title title">My recent <span>works</span></h2>
 					<div class="works__items items-works">
 						<nav class="items-works__navigation">
-							<button class="items-works__type button button--dark active">AII</button>
-							<button class="items-works__type button button--dark">UI</button>
-							<button class="items-works__type button button--dark">UX</button>
-							<button class="items-works__type button button--dark">Web Design</button>
+							<button data-work-type="" class="items-works__type button button--dark active">AII</button>
+							<button data-work-type="ui" class="items-works__type button button--dark">UI</button>
+							<button data-work-type="ux" class="items-works__type button button--dark">UX</button>
+							<button data-work-type="wd" class="items-works__type button button--dark">Web Design</button>
 						</nav>
 						<div class="items-works__body">
-							<a href="#" class="items-works__item">
+							<a data-work-type="ui" href="#" class="items-works__item">
 								<div class="items-works__image">
 									<img src="img/works/items/01.png" alt="Image">
 								</div>
 							</a>
-							<a href="#" class="items-works__item">
+							<a data-work-type="ux" href="#" class="items-works__item">
 								<div class="items-works__image">
 									<img src="img/works/items/02.png" alt="Image">
 								</div>
 							</a>
-							<a href="#" class="items-works__item">
+							<a data-work-type="wd" href="#" class="items-works__item">
 								<div class="items-works__image">
 									<img src="img/works/items/03.png" alt="Image">
 								</div>
@@ -140,13 +140,13 @@
 				<nav class="footer__menu menu-footer">
 					<ul class="menu-footer__list">
 						<li class="menu-footer__item">
-							<a href="#" class="menu-footer__link menu-footer__link--home">Home</a>
+							<a href="#" data-goto=".main" class="menu-footer__link menu-footer__link--home">Home</a>
 						</li>
 						<li class="menu-footer__item">
-							<a href="#" class="menu-footer__link menu-footer__link--about">About me</a>
+							<a href="#" data-goto=".about" class="menu-footer__link menu-footer__link--about">About me</a>
 						</li>
 						<li class="menu-footer__item">
-							<a href="#" class="menu-footer__link menu-footer__link--contacts">Contact</a>
+							<a href="#" data-goto=".contacts" class="menu-footer__link menu-footer__link--contacts">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -167,6 +167,8 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/script.js"></script>
+
 </body>
 
 </html>
